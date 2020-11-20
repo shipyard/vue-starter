@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  vue:
+    labels:
+      shipyard.route: '/'
+    build:
+      context: .
+    ports:
+      - '8080:8080'
+    volumes:
+      - './src:/app/src'
